@@ -4,11 +4,14 @@
   "description": "my first electron app",
   "main": "index.js",
   "scripts": {
-    "start" : "electron ."
+    "start": "electron ."
   },
   "author": "Ava Shaw",
   "license": "MIT",
   "devDependencies": {
     "electron-prebuilt": "^1.4.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2"
   }
 }
