@@ -1,0 +1,50 @@
+
+/* --------------------------------------------------------- GENERAL --------------------------------------------------------- */
+/* Feel free to customize, or remove this file to meet the needs of your application. Recompile chartiq.scss when done */
+
+body {
+	-ms-touch-action: none; /* Necessary for windows mobile devices */
+	@include user-select(none); /* turns off select functionality on all dom elements */
+
+	/* These can be removed or changed to suit your needs */
+	background:$DEFAULT-bg;
+	color: $DEFAULT-text-medium;
+	font-family:$base-font;
+	font-size: $font-size-base;
+	font-weight:300;
+}
+
+input {
+	@include user-select(text); /* turns on select functionality for all input tags */
+
+	/* These can be removed of changed to suite your needs */
+	font-weight: 300;
+	color: #071931;
+}
+
+div, li, span, a {
+	//@include user-select(none);
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* eliminated annoying flash when tapping screen on ipads */
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+.thin {font-weight:100} 	/* Regular */
+.light {font-weight:300} 	/* Regular and Condensed*/
+.normal {font-weight:400}	/* Regular and Condensed*/
+.medium {font-weight:500}	/* Regular */
+.bold {font-weight:700} 	/* Regular and Condensed*/
+
+/* You can safely remove or override these */
+input[type="text"], 
+input[type="number"] {
+	border: $DEFAULT-border-subtle solid 1px;
+	padding: 0 5px 0 10px;
+}
+
+.stx_xaxis, .stx_yaxis {
+	font-family: $base-font;
+}
+
+.stx_line_chart {
+	width: 2px;
+}
